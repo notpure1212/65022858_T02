@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mana.css">
+</head>
+<body>
+    <form>
+        <label id="nameform">First name:</label>
+        <input id="name"type="text" onfocus="focusbox(this)" onblur="blurbox(this)"><br><br>
+        <label for="">Last name:</label>
+        <input id="surname"type="text" onfocus="focusbox(this)" onblur="blurbox(this)">
+
+        <h3>Date of Birth</h3>
+        <input type="date" id="dateinfo">
+        <br><br>
+        <label for="">choose your language</label>
+        <select name="" id="menu" onchange="selectmenu()">
+        <option value="C">C</option>
+        <option value="Java">JAVA</option>
+        <option value="Javascript">JAVASCRIPT</option>
+        <option value="Python">Python</option>
+        </select>
+        <br><br>
+        <input type="button" value="Submit" onclick="nameform()">
+      </form>
+      <p id="select-result"></p><p id="firstname"></p><p id="lastname"></p>
+      <p id="display-date"></p>
+
+
+        <script src="main.js"></script>
+</body>
+</html>
